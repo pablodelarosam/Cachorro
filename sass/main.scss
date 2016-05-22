@@ -1,3 +1,11 @@
+// Font stack
+$font-url--google: 'http://fonts.googleapis.com/css?family=Open+Sans|Yeseva+One|Pathway+Gothic+One|Alegreya+Sans+SC:300,500';
+$font-family--primary: "Open Sans", sans-serif;
+$font-family--secondary: 'Yeseva One', cursive;
+
+$blue-gray--900: #263238;
+$soft-gray: #FAFAFA;
+
 
 .carouselImg {
   height: 500px;
@@ -48,4 +56,28 @@
     max-width:50% !important; /* or any */
   }
 
+}
+
+.calendar-card {
+  height: 500px;
+  .row {
+    height: 100%;
+  }
+  .card-list {
+    height: 100%;
+    background: $blue-gray--900;
+    color: white;
+  }
+  .card-display {
+    height: 100%;
+    background: $soft-gray;
+    text-align: center;
+    h1 {
+      font-size: 8em;
+    }
+    h3 {
+      font-size: 4em;
+      color: #ccc;
+    }
+  }
 }

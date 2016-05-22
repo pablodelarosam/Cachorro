@@ -39,4 +39,22 @@
     max-width: 50% !important;
     /* or any */ }
 
+.calendar-card {
+  height: 500px; }
+  .calendar-card .row {
+    height: 100%; }
+  .calendar-card .card-list {
+    height: 100%;
+    background: #263238;
+    color: white; }
+  .calendar-card .card-display {
+    height: 100%;
+    background: #FAFAFA;
+    text-align: center; }
+    .calendar-card .card-display h1 {
+      font-size: 8em; }
+    .calendar-card .card-display h3 {
+      font-size: 4em;
+      color: #ccc; }
+
 /*# sourceMappingURL=main.css.map */
