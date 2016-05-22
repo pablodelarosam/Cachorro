@@ -8,8 +8,8 @@
   overflow: hidden; }
 
 .countdown {
-  margin-left: 30%;
-  display: inline-flex; }
+  text-align: center;
+  width: 100%; }
   .countdown h1 {
     font-size: 120px; }
 
@@ -97,9 +97,7 @@ footer {
   .first-p {
     padding: 0; }
 
-  .countdown {
-    margin-left: 18%; }
-    .countdown h1 {
-      font-size: 52px; } }
+  .countdown h1 {
+    font-size: 52px; } }
 
 /*# sourceMappingURL=main.css.map */
