@@ -76,7 +76,6 @@ $soft-gray: #FAFAFA;
     }
   }
 }
-
 .help {
   background-image: url(../images/help2.jpg);
 }
@@ -89,36 +88,52 @@ $soft-gray: #FAFAFA;
   background-size: cover;
   background-position: 50% 50%;
 }
-
 .card-sheet {
   height: 300px;
 }
+footer {
+  width: 100%;
+  background: #707070;
+  .contact-foot {
+    margin: 2% 0;
+    opacity: 0.7;
+  }
+}
+.first-p {
+  padding: 74px;
+}
+.dynamic-h {
+  height: 2000px;
+}
 
-
-  footer {
-    width: 100%;
-    background: #707070;
-    .contact-foot {
-      margin: 2% 0;
-      opacity: 0.7;
-    }
+@media("max-width: 968px") {
+  .dynamic-h {
+    height: 3600px;
+  }
+}
+@media("max-width: 768px") {
+  .carouselImg {
+    height: 140px;
+  }
+  .head-img {
+    height: 138px;
   }
   .first-p {
-    padding: 74px;
+    padding: 0;
   }
-  @media("max-width: 768px") {
-    .carouselImg {
-      height: 140px;
-    }
-    .head-img {
-      height: 138px;
-    }
-    .first-p {
-      padding: 0;
-    }
-    .countdown {
-      h1 {
-        font-size: 52px;
-      }
+  .countdown {
+    h1 {
+      font-size: 52px;
     }
   }
+  .calendar-card .card-display h1 {
+    font-size: 4em;
+    /* font-size: 8em; */
+  }
+  h3 {
+    font-size: 2em;
+  }
+  .dynamic-h {
+    height: 5600px;
+  }
+}
