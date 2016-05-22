@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>Hildeberto Pérez Álvarez</title>
@@ -11,122 +11,151 @@
   <meta name="description" content="En Next Players estamos comprometidos a ayudar atletas, coaches y equipos alcanzar su potencial. Facilitaremos la búsqueda de talento y conexión entre jugadores y reclutadores, con mayor alcance.">
   <meta name="keywords" content="Next players, Nextplayers, reclutamiento deportivo, futbol americano, futbol soccer, basquetbol, becas deportivas, universidad, deporte universitario, atleta, beca">
   <meta name="author" content="Craft Code">
-  <meta name="google-site-verification" content="7LHxZHxFVPqkEVQBl3BkEF9t4H_XeyTOe_uj0a_1w2A" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <!--STYLES-->
-  <link rel="stylesheet" href="/styles/importer.css">
-  <link rel="stylesheet" href="/styles/main.css">
-   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
   <!--STYLES END-->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 
 </head>
 
 <body ng-app="CachorroApp" ng-cloak>
 
-  <div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
-    <li data-slide-to="1" data-target="#carousel-example-generic"></li>
-    <li data-slide-to="2" data-target="#carousel-example-generic"></li>
-  </ol>
+  <header md-page-header>
+    <md-toolbar>
+      <div class="carousel slide carouselImg" data-ride="carousel" id="carousel-example-generic">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
 
-    <div class="item active">
-       <img src="cachorro.jpg" alt="..." style="width:100%;">
-    </div>
-    <div class="item">
-         <img src="cachorro2.jpg" alt="...">
-    </div>
+          <div class="item active">
+            <div class="head-img im1"></div>
+          </div>
+          <div class="item">
+            <div class="head-img im2"></div>
+          </div>
 
-    <div class="item">
-      <img src="cachorro3.jpg" alt="..." style="width:34%;">
+          <div class="item">
+            <div class="head-img im3"></div>
+          </div>
 
-    </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button">
+          <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" data-slide="next" href="#carousel-example-generic" role="button">
+          <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </md-toolbar>
+  </header>
 
+
+
+  <!-- Contenedores -->
+  <div>
+    <md-content>
+      <md-tabs md-border-bottom md-autoselect md-center-tabs="true" md-dynamic-height="true">
+        <md-tab label="Acerca de mí">
+          <md-content class="md-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <md-card>
+
+                  </md-card>
+                </div>
+                <div class="col-sm-8">
+                  <p>Desde pequeño mi madre y padre inculcaron en mí, valores y conductas que hoy agradezco me hayan enseñado.</p>
+                  <p>Aprendí que la honestidad, el respeto, la fe, la sencillez, la familia, la humildad, la tolerancia, etc deben ser cualidades en todos los seres humanos.</p>
+                  <p>Poco a poco fui creciendo y llegaron dos cosas a mi vida: el trabajo y el boxeo </p>
+                  <p>Ambas me han hecho mejor persona, pero también me han hecho conocer y entender las necesidades y problemas de los demás, los cuales he combatido desde hace años, primero junto a quien me enseñó del campo, después junto a mis amigos y
+                    familia.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <h1> ¿Qué he hecho? </h1>
+                  <p>Desde hace más de ocho años he trabajado por el bien común de Zacatelco, he apoyado a quien lo ha solicitado sin importar clase social, religión o preferencias sexuales; repito: el respeto es importante y es un valor que todos debemos
+                    tener en cuenta. </p>
+                  <p> Sin embargo, para ayudar a Zacatelco es necesario un proyecto mayor, con objetivos claros y que solucione los problemas que hoy tenemos.</p>
+                  <p> Y este proyecto se llama Presidencia Municipal, soy una persona preparada, de propuestas, abierta al diálogo, con ganas de trabajar, servir al pueblo, no servirme de él.</p>
+                  <p> Por un mejor Zacatelco, por una mejor política, por el bienestar común.</p>
+                </div>
+                <div class="col-sm-4">
+                  <md-card>
+
+                  </md-card>
+                </div>
+              </div>
+            </div>
+          </md-content>
+        </md-tab>
+        <md-tab label="mis propuestas">
+          <md-content class="md-padding container">
+            <div class="row">
+              <div class="col-sm-4">
+                <md-card>
+                  <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+                  <md-card-title>
+                    <md-card-title-text>
+                      <span class="md-headline">Seguridad pública</span>
+                    </md-card-title-text>
+                  </md-card-title>
+                  <md-card-content>
+                    <p>
+            							En un marco de respeto a los derechos humanos y civiles. garantizar la libertad y dignidad.
+                    </p>
+                    <p>
+                      Reto:incrementar el número de policías y patrullas en el municipio, capacitar al personal, así como colocar cámaras de seguridad para generar un organismo similar al "C4".
+                    </p>
+                  </md-card-content>
+                </md-card>
+              </div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+            </div>
+            <p style="font-weight:bold; font-size:20px;">2. Infraestructura</p>
+            <p> Construcción de una planta de aguas residuales, drenajes pluviales, pozo de riego, compactador de basura. </p>
+            <p style="font-weight:bold; font-size:20px;">3. Personas con capacidades diferentes</p>
+            <p> Adquirir un medio de transporte adecuado y gestionar apoyos para ellos. </p>
+            <p style="font-weight:bold; font-size:20px;">4. Educación</p>
+            <p> Gestionar más matrículas para la apertura de nuevas escuelas, así como entregar uniformes escolares gratuitos en todas las primarias. </p>
+            <p style="font-weight:bold; font-size:20px;">5. Campo sustentable</p>
+            <p>A través de especialistas en la materia, capacitar e innovar, para más producción y calidad. </p>
+            <p style="font-weight:bold; font-size:20px;">6. Deporte</p>
+            <p> De apoyo y cobertura económica a los deportistas de alto rendimiento o con alguna discapacidad. Asi mismo, impulsar las actividades deportivas en el municipio. </p>
+            <p style="font-weight:bold; font-size:20px;">7. Empleo</p>
+            <p>A través de redes emprendedoras, generar proyectos que brinden trabajo en Zacatelco</p>
+            <p style="font-weight:bold; font-size:20px;">8. Cultura</p>
+            <p>Reinventar "Casa de la cultura en Zacatelco". </p>
+            <p style="font-weight:bold; font-size:20px;">9. Madres solteras</p>
+            <p> Crear una estancia para que mientras las madres trabajan, sus hijos se encuentran en un ambiente adecuado.
+              <p style="font-weight:bold; font-size:20px;">10. Salud</p>
+              <p>a) Gestionar la creación del área de detección de displasias para el oportuno tratamiento de cáncer en las mujeres. </p>
+              <p>b) Gestionar clínica para la prevención, detección y tratamiento de enfermedades visuales.</p>
+              <p style="font-weight:bold; font-size:20px;">11. Estudiantes</p>
+              <p>Becas a los mejores estudiantes de nivel bachillerato </p>
+              <p style="font-weight:bold; font-size:20px;">12. Creación de la Casa del Abuelo.</p>
+              <p> La atención a grupos vulnerables, como las personas de tercera edad debe ser prioridad, así que se creará un espacio con condicionas dignas para ellos. </p>
+              <p style="font-weight:bold; font-size:20px;">13. Protección civil</p>
+              <p>Crear el cuerpo de bomberos para Zacatelco. </p>
+          </md-content>
+        </md-tab>
+        <md-tab label="Eventos">
+          <md-content class="md-padding">
+            <h1 class="md-display-2">Tab Three</h1>
+            <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante
+              eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+          </md-content>
+        </md-tab>
+      </md-tabs>
+    </md-content>
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button">
-    <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" data-slide="next" href="#carousel-example-generic" role="button">
-    <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<div  layout="column" layout-margin style="padding:25px;" ng-cloak>
-
-  <md-progress-linear md-mode="determinate" value="{{vm.determinateValue}}"></md-progress-linear>
-</div>
-<!-- Contenedores -->
-<div ng-cloak>
-  <md-content>
-    <md-tabs md-dynamic-height md-border-bottom>
-      <md-tab label="mis propuestas">
-        <md-content class="md-padding">
-
-          <p style="font-weight:bold; font-size:20px;">1. Seguridad pública</p>
-          <p> En un marco de respeto a los derechos humanos y civiles. garantizar la libertad y dignidad.</p>
-          <p>Reto:incrementar el número de policías y patrullas en el municipio, capacitar al personal, así como colocar cámaras de seguridad para generar un organismo similar al "C4". </p>
-          <p style="font-weight:bold; font-size:20px;">2. Infraestructura</p>
-          <p> Construcción de una planta de aguas residuales, drenajes pluviales, pozo de riego, compactador de basura. </p>
-          <p style="font-weight:bold; font-size:20px;">3. Personas con capacidades diferentes</p>
-          <p> Adquirir un medio de transporte adecuado y gestionar apoyos para ellos. </p>
-          <p style="font-weight:bold; font-size:20px;">4. Educación</p>
-          <p> Gestionar más matrículas para la apertura de nuevas escuelas, así como entregar uniformes escolares gratuitos en todas las primarias. </p>
-          <p style="font-weight:bold; font-size:20px;">5. Campo sustentable</p>
-          <p>A través de especialistas en la materia, capacitar e innovar, para más producción y calidad. </p>
-          <p style="font-weight:bold; font-size:20px;">6. Deporte</p>
-          <p> De apoyo y cobertura económica a los deportistas de alto rendimiento o con alguna discapacidad. Asi mismo, impulsar las actividades deportivas en el municipio. </p>
-          <p style="font-weight:bold; font-size:20px;">7. Empleo</p>
-          <p>A través de redes emprendedoras, generar proyectos que brinden trabajo en Zacatelco</p>
-          <p style="font-weight:bold; font-size:20px;">8. Cultura</p>
-          <p>Reinventar "Casa de la cultura en Zacatelco". </p>
-          <p style="font-weight:bold; font-size:20px;">9. Madres solteras</p>
-          <p> Crear una estancia para que mientras las madres trabajan, sus hijos se encuentran en un ambiente adecuado.
-          <p style="font-weight:bold; font-size:20px;">10. Salud</p>
-          <p>a) Gestionar la creación del área de detección de displasias para el oportuno tratamiento de cáncer en las mujeres. </p>
-          <p>b) Gestionar clínica para la prevención, detección y tratamiento de enfermedades visuales.</p>
-          <p style="font-weight:bold; font-size:20px;">11. Estudiantes</p>
-          <p>Becas a los mejores estudiantes de nivel bachillerato </p>
-          <p style="font-weight:bold; font-size:20px;">12. Creación de la Casa del Abuelo.</p>
-          <p> La atención a grupos vulnerables, como las personas de tercera edad debe ser prioridad, así que se creará un espacio con condicionas dignas para ellos. </p>
-          <p style="font-weight:bold; font-size:20px;">13. Protección civil</p>
-          <p>Crear el cuerpo de bomberos para Zacatelco. </p>
-        </md-content>
-      </md-tab>
-      <md-tab label="Acerca de mí">
-        <md-content class="md-padding">
-        <p>Desde pequeño mi madre y padre inculcaron en mí, valores y conductas que hoy agradezco me hayan enseñado.</p>
-        <p>Aprendí que la honestidad, el respeto, la fe, la sencillez, la familia, la humildad, la tolerancia, etc deben ser cualidades en todos los seres humanos.</p>
-        <p>Poco a poco fui creciendo y llegaron dos cosas a mi vida: el trabajo y el boxeo </p>
-        <p>Ambas me han hecho mejor persona, pero también me han hecho conocer y entender las necesidades y problemas de los demás, los cuales he combatido desde hace años, primero junto a quien me enseñó
-          del campo, después junto a mis amigos y familia.</p>
-          <h1> ¿Qué he hecho? </h1>
-          <p>Desde hace más de ocho años he trabajado por el bien común de Zacatelco, he apoyado a quien lo ha solicitado sin importar clase social, religión o preferencias sexuales; repito:
-            el respeto es importante y es un valor que todos debemos tener en cuenta. </p>
-            <p> Sin embargo, para ayudar a Zacatelco es necesario un proyecto mayor, con objetivos claros y que solucione los problemas que hoy tenemos.</p>
-            <p> Y este proyecto se llama Presidencia Municipal, soy una persona preparada, de propuestas, abierta al diálogo, con ganas de trabajar, servir al pueblo, no servirme de él.</p>
-            <p> Por un mejor Zacatelco, por una mejor política, por el bienestar común.</p>
-            <h2>¡Juntos podemos lograrlo!</h2>
-            <p>Atentamente: Hildeberto Pérez Álvarez </p>
-        </md-content>
-      </md-tab>
-      <md-tab label="Eventos">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">Tab Three</h1>
-          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
-        </md-content>
-      </md-tab>
-    </md-tabs>
-  </md-content>
-</div>
 
   <footer class="footer">
 
@@ -135,18 +164,17 @@
 
 
 
-    <!-- Angular Material requires Angular.js Libraries -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
 
-    <!-- Angular Material Library -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 
 
   <!--SCRIPTS-->
@@ -155,7 +183,7 @@
   <!-- Your application bootstrap  -->
   <script type="text/javascript">
     /**
-     * You must include the dependency on 'ngMaterial'
+     * You must include the dependency on 'ngMaterial' #532A66
      */
     angular.module('CachorroApp', ['ngMaterial']);
   </script>
